@@ -10,12 +10,23 @@ I build financial systems around the way a business earns revenue, receives cash
 
 A financial operations framework designed for the complexity of modern commerce businesses operating across direct-to-consumer, marketplaces, wholesale, national retail, and third-party logistics.
 
-The portfolio covers four e-commerce operating profiles:
+The Ecommerce portfolio covers four operating profiles:
 
 - Multi-channel DTC
 - B2B and DTC omnichannel
 - High-volume DTC, marketplace, and national retail
 - CPG, big-box retail, DTC, and 3PL
+
+### [SaaS Financial OS](industry-operating-systems/saas-financial-os/)
+
+A financial operations portfolio designed for recurring-revenue businesses across self-serve subscriptions, sales-assisted B2B contracts, hybrid revenue models, and lean SaaS finance environments.
+
+The SaaS portfolio covers four operating profiles:
+
+- Self-serve subscription SaaS
+- B2B contract SaaS
+- Hybrid B2B and self-serve SaaS
+- Lean SaaS finance and executive reporting
 
 ## Professional Focus
 
@@ -43,4 +54,3 @@ My credentials and platform experience include:
 ## Portfolio Note
 
 The materials in this library are presented as professional portfolio examples. Demonstration data and examples are synthetic and do not contain client financial information, credentials, confidential reports, or contract terms.
-
