@@ -1,50 +1,46 @@
 # Delana's OS Library
 
-> A public reference library of industry-specific financial operating systems designed by Delana Prudhomme.
+> A personal portfolio of industry-specific financial operating systems designed by Delana Prudhomme.
 
-The library demonstrates how accounting controls, automation, AI-assisted exception review, human approval, and executive-ready reporting can be designed around the way different businesses actually operate.
+I build financial systems around the way a business earns revenue, receives cash, manages costs, and makes decisions. This library highlights selected work across accounting operations, reconciliations, reporting, and financial systems design.
 
-These are not generic bookkeeping checklists. Each operating system maps the source systems, transaction economics, accounting paths, reconciliation controls, exception conditions, approval requirements, and close evidence specific to its industry.
+## Featured Build
 
-## Library
+### [E-Commerce Financial OS](industry-operating-systems/ecommerce-financial-os/)
 
-| Financial operating system | Coverage | Public status |
-|---|---|---|
-| [E-Commerce Financial OS](industry-operating-systems/ecommerce-financial-os/) | DTC, marketplaces, B2B wholesale, national retail, CPG, and 3PL | Published |
-| SaaS Financial OS | Subscription billing, deferred revenue, SaaS metrics, cash planning, and executive reporting | Planned |
-| Real Estate Financial OS | Property-level accounting, portfolio reporting, owner activity, and cash controls | Planned |
-| Construction Financial OS | Job costing, progress billing, retainage, WIP, draws, and project profitability | Planned |
-| Service Business & Agency Financial OS | Project economics, utilization, billing, contractor costs, and margin reporting | Planned |
-| Nonprofit Financial OS | Fund restrictions, functional expenses, grant tracking, and board reporting | Planned |
+A financial operations framework designed for the complexity of modern commerce businesses operating across direct-to-consumer, marketplaces, wholesale, national retail, and third-party logistics.
 
-## Operating-System Standard
+The portfolio covers four e-commerce operating profiles:
 
-Every public system is organized around the same ten-part standard:
+- Multi-channel DTC
+- B2B and DTC omnichannel
+- High-volume DTC, marketplace, and national retail
+- CPG, big-box retail, DTC, and 3PL
 
-1. Trigger
-2. Required inputs
-3. Source systems
-4. Automation and orchestration
-5. AI-assisted responsibility
-6. Accounting controls
-7. Human approval requirements
-8. Exception conditions
-9. Final accounting update
-10. Audit and close evidence
+## Professional Focus
 
-## Public and Private Boundary
+- E-commerce and CPG accounting operations
+- QuickBooks Online system design, cleanup, and reporting
+- Shopify, Amazon, marketplace, processor, and retail-channel reconciliation
+- Accounts receivable, retailer deductions, and cash application
+- Inventory, COGS, fulfillment, and channel profitability
+- Month-end close design and audit-ready support
+- Financial reporting, KPI tracking, and executive dashboards
+- Workflow improvement and accounting automation
 
-This repository contains curated reference architecture, control concepts, workflow summaries, and synthetic examples.
+## Experience
 
-Production implementation materials remain in a separate private library, including executable reconciliation engines, detailed agent specifications, orchestration scenarios, client configurations, mapping logic, thresholds, integration contracts, and complete test suites.
+I bring 19 years of accounting experience across e-commerce and CPG, SaaS and technology, nonprofit organizations, real estate, professional services, and complex cleanup engagements.
 
-No client financial data, credentials, confidential reports, or contract terms are included here.
+My credentials and platform experience include:
 
-## Repository Map
+- QuickBooks Online Advanced Certified ProAdvisor
+- Certified Bookkeeper
+- A2X Certified Partner
+- Shopify Partner
+- B.S. in Accounting
 
-- [`industry-operating-systems/`](industry-operating-systems/) — public industry-specific Financial OS builds
-- [`NOTICE.md`](NOTICE.md) — ownership and permitted-use notice
+## Portfolio Note
 
-## About Delana
+The materials in this library are presented as professional portfolio examples. Demonstration data and examples are synthetic and do not contain client financial information, credentials, confidential reports, or contract terms.
 
-Delana Prudhomme is an accounting and finance operations professional who designs customized financial operating systems that connect accounting controls, automation, AI-assisted review, and executive reporting to the way a business actually operates.
