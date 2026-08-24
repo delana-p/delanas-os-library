@@ -1,98 +1,58 @@
-# E-Commerce Financial Operations System
+# E-Commerce Financial OS
 
-> A public reference architecture for controlled, channel-aware e-commerce accounting operations.
+> A portfolio build for complex, multi-channel e-commerce and consumer-product businesses.
 
-Designed by **Delana Prudhomme**, this repository demonstrates how a financial operating system can reconcile the different economics of direct-to-consumer, marketplace, wholesale, national retail, and third-party logistics channels into one reliable month-end close.
+Designed by **Delana Prudhomme**, this project demonstrates the financial operations required to bring DTC, marketplace, wholesale, national retail, and 3PL activity into a reliable accounting and reporting environment.
 
-## Why This Exists
+## Business Profiles Covered
 
-E-commerce deposits are not revenue summaries. A single deposit can contain sales, taxes, discounts, refunds, reserves, fees, chargebacks, timing differences, and activity from multiple accounting periods.
-
-This reference architecture shows how to preserve gross economic activity, route each channel through the correct accounting path, surface exceptions, retain human approval over judgment, and produce traceable support for QuickBooks Online.
-
-## Business Models Covered
-
-| Operating model | Representative channels | Primary accounting path |
+| Profile | Representative environment | Financial focus |
 |---|---|---|
-| Multi-channel DTC | Shopify, Amazon, Etsy, TikTok Shop, Meta | Settlement-to-cash reconciliation |
-| B2B + DTC omnichannel | Wholesale, EDI customers, Faire, Amazon, Shopify | AR and settlement routing |
-| High-volume DTC + national retail | Shopify, Amazon, specialty and big-box retail | Batch controls, retailer AR, deductions, and settlements |
-| CPG + DTC + 3PL | National retail, Shopify, 3PL inventory and fulfillment | Revenue, AR, inventory, COGS, and fulfillment-cost controls |
+| Multi-channel DTC | Shopify, Amazon, Etsy, TikTok Shop, and Meta | Sales, settlements, cash, and month-end reconciliation |
+| B2B + DTC omnichannel | Wholesale customers, EDI, Faire, Amazon, and Shopify | AR, remittance, deductions, settlements, and cash application |
+| High-volume DTC + national retail | Shopify, Amazon, specialty retail, and big-box relationships | High-volume close, retailer activity, gross-to-net reporting, and channel visibility |
+| CPG + DTC + 3PL | National retail, Shopify, inventory, and outsourced fulfillment | Inventory, COGS, fulfillment costs, and channel profitability |
 
-## Reference Workflows
+## What This Portfolio Demonstrates
 
-### 01 — DTC Multi-Channel Settlement Reconciliation
+- Financial workflows tailored to different revenue channels
+- Multi-channel sales and settlement reconciliation
+- Wholesale and retailer accounts-receivable oversight
+- Deduction, return, allowance, chargeback, and short-pay visibility
+- Inventory, COGS, and third-party fulfillment reporting
+- QuickBooks Online alignment and month-end close support
+- Exception management and reviewer-ready financial documentation
+- Channel-level profitability and management reporting
 
-Reconciles channel activity from source sales through processor or marketplace settlement, bank deposit, clearing, QBO, month-end adjustment, and audit evidence.
+## Portfolio Workflows
 
-### 02 — B2B + DTC Omnichannel Revenue Reconciliation
+### [01 — DTC Multi-Channel](workflows/01-dtc-multichannel.md)
 
-Routes wholesale activity through invoice-to-remittance-to-cash controls while marketplace and DTC activity follow settlement accounting. Deductions, short pays, unapplied cash, and unsupported differences remain visible.
+Sales and settlement reconciliation across a Shopify-led direct-to-consumer environment with marketplace and social-commerce channels.
 
-### 03 — High-Volume DTC + National Retail + Marketplace
+### [02 — B2B + DTC Omnichannel](workflows/02-b2b-dtc-omnichannel.md)
 
-Combines transaction-level batch controls with retailer AR, remittance, deductions, returns, allowances, chargebacks, marketplace settlements, and month-end cutoff review.
+Financial operations for businesses combining wholesale receivables with marketplace and direct-to-consumer activity.
 
-### 04 — CPG + Big-Box + DTC + 3PL
+### [03 — High-Volume DTC + National Retail](workflows/03-high-volume-retail-marketplace.md)
 
-Connects retailer AR and Shopify settlements to 3PL inventory movement, inventory-to-QBO reconciliation, channel COGS, fulfillment costs, and gross-margin review.
+Close and reconciliation design for high transaction volume, Amazon marketplace activity, and national retail relationships.
 
-## Operating Architecture
+### [04 — CPG + Big-Box + DTC + 3PL](workflows/04-cpg-big-box-dtc-3pl.md)
 
-```mermaid
-flowchart TD
-    A["Commerce, retailer, 3PL and bank sources"] --> B["Validated and normalized activity"]
-    B --> C["Channel-specific accounting controls"]
-    C --> D["Exceptions and human review"]
-    D --> E["Controlled QBO update"]
-    E --> F["Close package and audit trail"]
-```
+An expanded consumer-products model connecting retailer activity, Shopify, inventory, COGS, outsourced fulfillment, and channel reporting.
 
-The operating model separates deterministic accounting calculations from automation orchestration and judgment:
+## Supporting Portfolio Materials
 
-- **Source layer:** commerce platforms, marketplaces, processors, retailer portals, 3PL systems, bank activity, and QBO
-- **Normalization layer:** consistent channel, settlement, invoice, remittance, SKU, and transaction structures
-- **Control layer:** settlement, AR, inventory, COGS, fee, cutoff, clearing, and duplicate controls
-- **Exception layer:** unsupported activity, timing differences, missing evidence, mapping failures, and material variances
-- **Review layer:** approval for write-offs, deductions, journal entries, inventory adjustments, policy decisions, and material exceptions
-- **Accounting layer:** controlled QBO posting, cash application, clearing reconciliation, and month-end adjustment
-- **Evidence layer:** reconciliations, rollforwards, exception resolution, approvals, and close support
+- [Financial operations architecture](docs/architecture.md)
+- [Accounting control framework](docs/control-framework.md)
+- [Synthetic close-package example](examples/synthetic-close-package.md)
 
-## Core Accounting Principles
+## Experience Behind the Build
 
-- Preserve gross activity instead of treating net deposits as revenue.
-- Reconcile each channel through its actual economic and cash-conversion path.
-- Keep settlement clearing, AR, inventory, and other variances separate.
-- Roll supported uncleared settlement balances forward until cash clears.
-- Preserve open AR until supported cash, credit, deduction, or approved adjustment resolves it.
-- Require evidence before accepting retailer deductions or inventory adjustments.
-- Tie high-volume accounting batches to transaction-level source totals.
-- Attribute COGS to the correct channel or customer before relying on channel profitability.
-- Route material exceptions to review instead of silently plugging the close.
-- Retain traceable support for every controlled accounting update.
+This portfolio reflects hands-on accounting and finance operations experience across Shopify, Amazon, Faire, wholesale and national retail relationships, payment processors, inventory and COGS, retailer deductions, third-party fulfillment, QuickBooks Online, and customized financial reporting.
 
-## What Is Public
+## Portfolio Note
 
-This repository includes reference architecture, control concepts, workflow summaries, and synthetic examples intended to demonstrate system design and accounting depth.
+All demonstration examples are synthetic and presented solely to illustrate professional experience and capabilities. No client financial information, credentials, confidential reports, or contract terms are included.
 
-## What Remains Private
-
-The production repository contains the executable reconciliation engines, detailed agent specifications, orchestration scenarios, client configurations, mapping logic, thresholds, integration contracts, test suites, and reviewer outputs. Those materials are intentionally excluded from this public reference.
-
-No client financial data, credentials, proprietary reports, or confidential contract terms are included here.
-
-## Repository Map
-
-- [`docs/architecture.md`](docs/architecture.md) — system layers and responsibility boundaries
-- [`docs/control-framework.md`](docs/control-framework.md) — accounting, exception, and approval controls
-- [`workflows/`](workflows/) — four public workflow summaries
-- [`examples/synthetic-close-package.md`](examples/synthetic-close-package.md) — example structure for reviewer-ready evidence
-- [`NOTICE.md`](NOTICE.md) — ownership and permitted-use notice
-
-## Status
-
-Public reference release covering four e-commerce operating models. The private build contains executable prototypes and expanded implementation materials.
-
-## About Delana
-
-Delana Prudhomme is an accounting and finance operations professional who designs customized financial operating systems that connect accounting controls, automation, AI-assisted review, and executive reporting to the way a business actually operates.
