@@ -28,6 +28,15 @@ The SaaS portfolio covers four operating profiles:
 - Hybrid B2B and self-serve SaaS
 - Lean SaaS finance and executive reporting
 
+## [Multi-Year Cleanup Workflows](cleanup-workflows/)
+
+Portfolio workflows for reconstructing historical accounting records and producing reliable year-by-year financial reporting for:
+
+- Omnichannel e-commerce
+- Marketing consultants
+- Construction companies
+- Service-based firms
+
 ## Professional Focus
 
 - E-commerce and CPG accounting operations
