@@ -42,12 +42,6 @@ Close and reconciliation design for high transaction volume, Amazon marketplace 
 
 An expanded consumer-products model connecting retailer activity, Shopify, inventory, COGS, outsourced fulfillment, and channel reporting.
 
-## Supporting Portfolio Materials
-
-- [Financial operations architecture](docs/architecture.md)
-- [Accounting control framework](docs/control-framework.md)
-- [Synthetic close-package example](examples/synthetic-close-package.md)
-
 ## Experience Behind the Build
 
 This portfolio reflects hands-on accounting and finance operations experience across Shopify, Amazon, Faire, wholesale and national retail relationships, payment processors, inventory and COGS, retailer deductions, third-party fulfillment, QuickBooks Online, and customized financial reporting.
@@ -55,4 +49,3 @@ This portfolio reflects hands-on accounting and finance operations experience ac
 ## Portfolio Note
 
 All demonstration examples are synthetic and presented solely to illustrate professional experience and capabilities. No client financial information, credentials, confidential reports, or contract terms are included.
-
